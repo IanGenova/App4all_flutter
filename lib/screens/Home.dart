@@ -1,4 +1,5 @@
 import 'package:churchapp_flutter/providers/AppStateManager.dart';
+import 'package:churchapp_flutter/screens/Map.dart';
 import '../screens/BibleScreen.dart';
 import '../providers/AudioPlayerModel.dart';
 import '../audio_player/miniPlayer.dart';
@@ -181,8 +182,6 @@ class HomePageBody extends StatelessWidget {
         child: Column(
           children: [
             Container(height: 20),
-
-
             Card(
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(8)),
@@ -196,7 +195,6 @@ class HomePageBody extends StatelessWidget {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceAround,
                       children: <Widget>[
-
                         Column(
                           children: <Widget>[
                             FloatingActionButton(
@@ -371,7 +369,37 @@ class HomePageBody extends StatelessWidget {
                             )
                           ],
                         ),
-
+                        Column(
+                          children: <Widget>[
+                            FloatingActionButton(
+                              heroTag: "fab7",
+                              elevation: 5,
+                              mini: true,
+                              backgroundColor: Colors.red[400],
+                              child: Icon(
+                                Icons.map_rounded,
+                                size: 25,
+                                color: Colors.white,
+                              ),
+                              onPressed: () {
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) => MapView()),
+                                );
+                              },
+                            ),
+                            Container(height: 5),
+                            SizedBox(
+                              width: 80,
+                              child: Text(
+                                "Map",
+                                style: TextStyles.caption(context),
+                                textAlign: TextAlign.center,
+                              ),
+                            )
+                          ],
+                        ),
                       ],
                     ),
                     Container(height: 15),
@@ -383,7 +411,6 @@ class HomePageBody extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
-
                 Expanded(
                   child: ItemTile(
                     index: HomeIndex.VIDEOS,
@@ -429,7 +456,6 @@ class HomePageBody extends StatelessWidget {
                     assetsImage: "assets/images/livestream.jpg",
                   ),
                 ),
-
               ],
             ),
             Container(height: 20),

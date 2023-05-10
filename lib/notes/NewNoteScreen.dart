@@ -95,8 +95,10 @@ class _NewNotesScreenState extends State<NewNotesScreen> {
                 height: 1.15,
                 fontWeight: FontWeight.w300,
               ),
-              const Tuple2(16, 0),
-              const Tuple2(0, 0),
+              VerticalSpacing(16, 0),
+              VerticalSpacing(0, 0),
+              // const Tuple2(16, 0),
+              // const Tuple2(0, 0),
               null),
           sizeSmall: const TextStyle(fontSize: 9),
         ));
