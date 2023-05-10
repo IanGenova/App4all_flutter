@@ -1,0 +1,150 @@
+name: churchapp_flutter
+description: My ChurchApp Project.
+
+# The following line prevents the package from being accidentally published to
+# pub.dev using `pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+version: 1.0.0+14
+
+environment:
+  sdk: '>=2.16.0 <3.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_map:
+  zefyrka: ^1.1.0-dev.1
+  fast_i18n: ^5.11.0
+  easy_dialog: ^1.1.0
+  sqflite: ^2.0.2
+  dio: ^4.0.4
+  provider: ^6.0.2
+  transparent_image: ^2.0.0
+  pull_to_refresh: ^2.0.0
+  cached_network_image: ^3.2.0
+  font_awesome_flutter: ^10.2.1
+  line_awesome_flutter: ^2.0.0
+  better_player: ^0.0.81
+  youtube_player_flutter: ^8.0.0
+  firebase_core: ^1.13.1
+  firebase_messaging: ^13.0.3
+  flutter_local_notifications: ^11.0.1
+  google_mobile_ads: ^2.0.1
+  shared_preferences: ^2.0.13
+  sign_in_apple: ^2.0.0
+  google_sign_in: ^5.2.4
+  email_validator: '^2.0.1'
+  shimmer: ^2.0.0
+  audiofileplayer: ^2.1.0
+  palette_generator: ^0.3.3
+  file_utils: ^1.0.0
+  permission_handler: ^10.0.2
+  path_provider: ^2.0.9
+  flutter_downloader: ^1.7.2
+  in_app_purchase: ^3.0.1
+  share_plus: ^4.4.0
+  package_info: ^2.0.2
+  in_app_review: ^2.0.4
+  flutter_web_browser: "^0.17.0"
+  lottie: ^1.2.2
+  flutter_widget_from_html: ^0.8.5
+  select_dialog: ^2.0.0
+  #flutter_tts: ^3.2.2
+  clipboard: ^0.1.3
+  translator: ^0.1.7
+  flutter_sticky_header: ^0.6.1
+  flutter_material_color_picker: ^1.1.0+2
+  #dynamic_text_highlighting: ^2.2.0
+  media_picker_widget: ^0.0.7
+  flutter_absolute_path:
+    git:
+      url: https://github.com/canewsin/flutter_absolute_path.git
+  smooth_page_indicator: ^1.0.0+2
+  visibility_detector: ^0.3.3
+  file_picker: ^5.2.0+1
+  event_bus: ^2.0.0
+  photo_view: ^0.14.0
+  flutter_login_facebook: ^1.4.1
+  #vimeoplayer_trinity: ^0.1.9
+  flutter_quill: ^6.0.6
+  intl: ^0.17.0
+  flash: ^2.0.3+2
+  highlight_text: ^1.3.0
+
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^1.0.4
+  collection: ^1.15.0-nullsafety.4
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  build_runner: any
+  flutter_launcher_icons: ^0.10.0
+
+
+flutter_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/icon/icon.png"
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter.
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    - assets/images/
+    - assets/lottie/
+
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/assets-and-images/#resolution-aware.
+
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.dev/assets-and-images/#from-packages
+
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  fonts:
+    - family: WorkSans
+      fonts:
+        - asset: assets/fonts/WorkSans-Regular.ttf
+        - asset: assets/fonts/WorkSans-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/WorkSans-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/WorkSans-Bold.ttf
+          weight: 700
+    - family: Roboto
+      fonts:
+        - asset: assets/fonts/Roboto-Bold.ttf
+        - asset: assets/fonts/Roboto-Regular.ttf
+        - asset: assets/fonts/Roboto-Medium.ttf
+          weight: 400
+
+
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/custom-fonts/#from-packages
